@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CS:GO & Valorant Sens Converter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>CS:GO & Valorant Sensitivity Calculator</h1>
+        <table>
+            <tr>
+                <td><label for="csgoDpi">CS:GO DPI</label></td>
+                <td><input type="number" id="csgoDpi"></td>
+                <td><p class="errorMsg" id="csgoDpiMsg"></p></td>
+            </tr>
+            <tr>
+                <td><label for="csgoSens">CS:GO Sensitivity</label></td>
+                <td><input type="number" id="csgoSens"></td>
+                <td><p class="errorMsg" id="csgoSensMsg"></p></td>
+            </tr>
+            <tr>
+                <td><label for="valoDpi">Valorant DPI</label></td>
+                <td><input type="number" id="valoDpi"></td>
+                <td><p class="errorMsg" id="valoDpiMsg"></p></td>
+            </tr>
+                <td><label for="valoSens">Valorant Sensitivity</label></td>
+                <td><input type="number" id="valoSens"></td>
+                <td><p class="errorMsg" id="valoSensMsg"></p></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="CS:GO to Valorant" onclick="csgo2valo()"></td>
+                <td><input type="button" value="Valorant to CS:GO" onclick="valo2csgo()"></td>
+            </tr>
+        </table>
+        <input type="button" value="Dark Mode Toggle" onclick="darkModeToggle()">
+        <script src="darkMode.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
